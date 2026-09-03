@@ -1,0 +1,12 @@
+{
+  "module" : "jacoco-with-min-coverage-check",
+  "date" : "2026-09-03T17:26:04.397524848Z",
+  "properties" : {
+    "endOfLine" : "lf",
+    "packageName" : "com.github.renanfranca.stringcalculator",
+    "projectName" : "String Calculator Kata",
+    "nodePackageManager" : "npm",
+    "indentSize" : 2,
+    "baseName" : "stringCalculator"
+  }
+}
