@@ -8,35 +8,16 @@ You need to have Java 25:
 
 - [JDK 25](https://openjdk.java.net/projects/jdk/25/)
 
-### Node.js and NPM
+Node.js is optional and only needed to install the Git hooks declared in [package.json](package.json).
 
-Before you can build this project, you must install and configure the following dependencies on your machine:
-
-[Node.js](https://nodejs.org/): We use Node to run a development web server and build the project.
-Depending on your system, you can install Node either from source or as a pre-packaged bundle.
-
-After installing Node, you should be able to run the following command to install development tools.
-You will only need to run this command when dependencies change in [package.json](package.json).
-
-```
-npm install
-```
-
-## Local environment
-
-
-<!-- seed4j-needle-localEnvironment -->
-
-## Start up
+## Verify the solution
 
 ```bash
-./mvnw
+./mvnw verify
 ```
 
+This runs the 13 behavior tests and enforces 100% line and branch coverage with JaCoCo.
 
-<!-- seed4j-needle-startupCommand -->
+## Specification
 
-## Documentation
-
-
-<!-- seed4j-needle-documentation -->
+The kata requirements and incremental steps are documented in [SPEC.md](SPEC.md).
