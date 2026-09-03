@@ -1,0 +1,12 @@
+{
+  "module" : "init",
+  "date" : "2026-09-03T18:38:16.670047133Z",
+  "properties" : {
+    "endOfLine" : "lf",
+    "packageName" : "com.renanfranca.kata",
+    "projectName" : "String Calculator Kata",
+    "nodePackageManager" : "npm",
+    "indentSize" : 2,
+    "baseName" : "StringCalculator"
+  }
+}
