@@ -12,9 +12,16 @@ The strongest result in this experiment is Sol xhigh at 98/100. Sol low and Sol 
 
 - Common implementation base: `38ebbcbfab95f5725b1c22b1d4701fb6222cab6b` (`string-calculator-kata`).
 - Identical kata specification: the `SPEC.md` blob inherited from that common base.
-- Exact shared prompt:
+- Shared prompt language: Brazilian Portuguese (`pt-BR`).
+- Original prompt, exactly as provided:
 
   > implement o kata utilizando o seed4j cli tool já instalado como apoio.
+
+- English translation, for readers only:
+
+  > Implement the kata using the already-installed Seed4J CLI tool as support.
+
+  The translation was not sent to the models and is not part of the experimental input.
 
 - Seed4J CLI: v0.0.4.
 - Active runtime: Seed4J 2.2.0, standard mode.

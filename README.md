@@ -2,9 +2,17 @@
 
 This repository compares six isolated implementations of the String Calculator kata. The experiment asks how effectively different Codex models and reasoning efforts use Seed4J CLI to create a reproducible Java/Maven foundation and then complete the same behavior-driven exercise.
 
-Every task received the exact prompt:
+Every task received the following prompt in Brazilian Portuguese:
+
+**Original prompt (pt-BR, exactly as provided):**
 
 > implement o kata utilizando o seed4j cli tool já instalado como apoio.
+
+**English translation (for readers only):**
+
+> Implement the kata using the already-installed Seed4J CLI tool as support.
+
+The translation was not sent to the models and is not part of the experimental input.
 
 ## Controlled experiment
 
