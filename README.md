@@ -14,6 +14,41 @@ Every task received the following prompt in Brazilian Portuguese:
 
 The translation was not sent to the models and is not part of the experimental input.
 
+## Try Seed4J CLI Yourself
+
+[Seed4J CLI](https://github.com/seed4j/seed4j-cli) lets an agent discover and apply only the modules a project needs. Its read-only plans expose dependencies, execution order, and resolved parameters before mutation; successful applications can also leave a Maven Wrapper, focused Git commits, and auditable `.seed4j/modules` history. All six runs in this experiment produced a reproducible build through that workflow.
+
+The CLI requires Java 25 or newer, Node.js 22 or newer, and npm. To reproduce the toolchain evaluated here, install the pinned package and confirm both versions:
+
+```bash
+npm install -g seed4j-cli@0.0.4
+seed4j --version
+```
+
+Expected version information:
+
+```text
+Seed4J CLI v0.0.4
+Seed4J version: 2.2.0
+Runtime mode: standard
+```
+
+From the root of any project, install the bundled agent skill locally:
+
+```bash
+seed4j skill install
+```
+
+This creates `.agents/skills/seed4j-cli`. Codex discovers repository-local skills automatically; restart Codex if a newly installed skill does not appear, then select `seed4j-cli` in the Skills UI or invoke `$seed4j-cli` explicitly where skill mentions are supported. See the official [OpenAI skills documentation](https://developers.openai.com/codex/skills/) for skill structure and discovery locations.
+
+For general experimentation with the latest CLI instead of reproducing these scores, omit the version pin:
+
+```bash
+npm install -g seed4j-cli
+```
+
+A newer CLI, Seed4J runtime, or bundled skill defines a new experiment and should not be compared directly with the pinned results below. The complete branch and validation procedure is in [Reproduce the experiment](MODEL_EVALUATION.md#appendix-c-reproduce-the-experiment).
+
 ## Controlled experiment
 
 All implementations started from commit `38ebbcb`, used the same `SPEC.md`, Seed4J CLI v0.0.4 with runtime Seed4J 2.2.0, the same host, and sequential execution. The only intended variables were the Codex model and reasoning effort.

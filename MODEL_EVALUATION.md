@@ -393,3 +393,79 @@ No timing points are awarded. Sequential execution, cache state, and commit timi
 | Luna xhigh | `CONVERSATION_TRANSCRIPT.md` | 816 | 394,139 |
 
 Line and byte counts illustrate format differences rather than completeness. The files record visible messages and tool activity while excluding private reasoning, internal instructions, encrypted content, and secrets. Because a transcript cannot fully contain its own creation and final commit without infinite self-reference, the final recording/commit operation may be absent or summarized. Transcript size and presentation receive no score.
+
+## Appendix C: reproduce the experiment
+
+### 1. Install the evaluated CLI
+
+Seed4J CLI requires Java 25 or newer, Node.js 22 or newer, and npm. Install the exact npm package used in this experiment:
+
+```bash
+java -version
+node --version
+npm --version
+npm install -g seed4j-cli@0.0.4
+seed4j --version
+```
+
+The final command must report:
+
+```text
+Seed4J CLI v0.0.4
+Seed4J version: 2.2.0
+Runtime mode: standard
+```
+
+The official [Seed4J CLI repository](https://github.com/seed4j/seed4j-cli) also documents an unpinned `npm install -g seed4j-cli` installation. Use that form to explore the latest release, not to reproduce this evaluation: a different CLI, runtime, or bundled skill creates a different experimental condition.
+
+### 2. Prepare an isolated branch
+
+Clone this repository and create every new run directly from the controlled base:
+
+```bash
+git clone https://github.com/renanfranca/seed4j-cli-string-calculator-kata.git
+cd seed4j-cli-string-calculator-kata
+git switch --create string-calculator-my-run origin/string-calculator-kata
+```
+
+Choose a unique branch name for each model/effort pair. Do not start from `main`, this evaluation branch, or another implementation branch.
+
+Commit `38ebbcb` on `origin/string-calculator-kata` already contains the repository-local skill used by all evaluated tasks:
+
+```text
+.agents/skills/seed4j-cli/
+├── SKILL.md
+└── references/
+    ├── applying-modules.md
+    └── module-set-planning.md
+```
+
+The three checked-in files are byte-for-byte identical to those installed by the pinned CLI's `seed4j skill install` command. For a different project that does not already contain them, run this from that project's root:
+
+```bash
+seed4j skill install
+```
+
+The command installs the bundled skill at `.agents/skills/seed4j-cli`; `seed4j skill install --global` is a different, user-level choice and was not used in this experiment. Codex scans `.agents/skills` from the working directory to the repository root, as described by the official [OpenAI skills documentation](https://developers.openai.com/codex/skills/).
+
+### 3. Start a fresh Codex task
+
+Start or restart Codex in the repository root after checking out the new branch. Confirm that `seed4j-cli` appears in the Skills UI or `/skills` listing, choose the model and reasoning effort being evaluated, and send exactly this prompt:
+
+> implement o kata utilizando o seed4j cli tool já instalado como apoio.
+
+Do not add the English translation to the task. Do not show the task another implementation branch, its source, tests, transcript, or score before it finishes. Use a fresh branch and a fresh Codex task for every run. If several runs will be compared, execute them sequentially and record their order because later runs may benefit from warm Maven or Seed4J caches.
+
+### 4. Validate and record the result
+
+After the task finishes, run the native build and inspect the generated audit trail:
+
+```bash
+./mvnw -q verify
+git log --oneline --reverse origin/string-calculator-kata..HEAD
+find .seed4j/modules -maxdepth 1 -type f -print | sort
+```
+
+Confirm that the Seed4J module commits precede the kata implementation commit and that the project retains its Maven Wrapper. For a direct comparison with this report, repeat the public API cases under [Independent validation](#independent-validation) with JShell, including the separate overlapping-delimiter bonus.
+
+Record the pinned result commit, model, reasoning effort, CLI/runtime versions, native test result, common acceptance result, execution order, and any cache differences. Without those controls, the result is useful as a Seed4J exercise but not as a new cell in this evaluation.
