@@ -10,8 +10,8 @@ The strongest result in this experiment is Sol xhigh at 98/100. Sol low and Sol 
 
 ### Fixed conditions
 
-- Common implementation base: `38ebbcbfab95f5725b1c22b1d4701fb6222cab6b` (`string-calculator-kata`).
-- Identical kata specification: the `SPEC.md` blob inherited from that common base.
+- Common implementation base: [`38ebbcb`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/38ebbcbfab95f5725b1c22b1d4701fb6222cab6b) ([`string-calculator-kata`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-kata)).
+- Identical kata specification: the [`SPEC.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/38ebbcbfab95f5725b1c22b1d4701fb6222cab6b/SPEC.md) blob inherited from that common base.
 - Shared prompt language: Brazilian Portuguese (`pt-BR`).
 - Original prompt, exactly as provided:
 
@@ -29,7 +29,7 @@ The strongest result in this experiment is Sol xhigh at 98/100. Sol low and Sol 
 - Sequential rather than concurrent execution.
 - Every evaluated result is pinned to a commit; no experiment branch was modified during evaluation.
 
-The evaluation branch itself was created from `main` at `a7f92b3d3fb5c216da9afab72b4cb6b2db99f30d`, so it contains only the shared specification and this report—not any implementation.
+The evaluation branch itself was created from [`main`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/main) at [`a7f92b3`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/a7f92b3d3fb5c216da9afab72b4cb6b2db99f30d), so it contains only the shared specification and this report—not any implementation.
 
 ### Changed variables
 
@@ -37,12 +37,12 @@ The intended variables were model and reasoning effort:
 
 | Label | Branch | Pinned result | Implementation commit | Model | Effort |
 | --- | --- | --- | --- | --- | --- |
-| Sol low | `string-calculator-sol-low` | `34ce51f` | `f86d943` | `gpt-5.6-sol` | low |
-| Sol medium | `string-calculator-sol-medium` | `bda5482` | `a682b5a` | `gpt-5.6-sol` | medium |
-| Sol high | `string-calculator-sol-high` | `dfea557` | `efff912` | `gpt-5.6-sol` | high |
-| Sol xhigh | `string-calculator-sol-xhigh` | `3d179c5` | `e22bea4` | `gpt-5.6-sol` | xhigh |
-| Terra xhigh | `string-calculator-terra-xhigh` | `9001fe8` | `ff9727c` | `gpt-5.6-terra` | xhigh |
-| Luna xhigh | `string-calculator-luna-xhigh` | `7ad4d48` | `31a1cb0` | `gpt-5.6-luna` | xhigh |
+| Sol low | [`string-calculator-sol-low`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-low) | [`34ce51f`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e) | [`f86d943`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/f86d943dcb4b5b08677502c4891c17233c7fc034) | `gpt-5.6-sol` | low |
+| Sol medium | [`string-calculator-sol-medium`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-medium) | [`bda5482`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/bda5482344c1c12531f16d74de6aeb4c50ce732e) | [`a682b5a`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/a682b5a2e9a7d02391a18d3c01555f732fb5d5f0) | `gpt-5.6-sol` | medium |
+| Sol high | [`string-calculator-sol-high`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-high) | [`dfea557`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/dfea557a4cca180ae016654ebafb6664dbf4a098) | [`efff912`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/efff912c45831e4801e6d73083a675afe74367f8) | `gpt-5.6-sol` | high |
+| Sol xhigh | [`string-calculator-sol-xhigh`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-xhigh) | [`3d179c5`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/3d179c56b288f0fcbc0c62ee94b5af3152887136) | [`e22bea4`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/e22bea4e216db808ae7682a63d857f2cce3d8c0b) | `gpt-5.6-sol` | xhigh |
+| Terra xhigh | [`string-calculator-terra-xhigh`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-terra-xhigh) | [`9001fe8`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/9001fe863565408ac3c9622b3b9e7e3edb7786f6) | [`ff9727c`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/ff9727c027f2981be3ba014628ae512eb209c7b7) | `gpt-5.6-terra` | xhigh |
+| Luna xhigh | [`string-calculator-luna-xhigh`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-luna-xhigh) | [`7ad4d48`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/7ad4d48b311ff664c2f8e4b012151513cad15916) | [`31a1cb0`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/31a1cb02f7ca6bb9bd251b7702c8c20cad04e8c8) | `gpt-5.6-luna` | xhigh |
 
 The two primary comparisons are therefore:
 
@@ -189,14 +189,23 @@ Every successful module produced one `Apply module: ...` commit and one record u
 
 | Result | Exact `.seed4j/modules` records |
 | --- | --- |
-| Sol low | `20260903174822832-init.json`, `20260903174822979-maven-java.json`, `20260903174823015-maven-wrapper.json` |
-| Sol medium | `20260903172604201-init.json`, `20260903172604361-maven-java.json`, `20260903172604397-jacoco-with-min-coverage-check.json`, `20260903172604427-maven-wrapper.json` |
-| Sol high | `20260903160528226-init.json`, `20260903160528447-maven-java.json`, `20260903160528492-jacoco-with-min-coverage-check.json`, `20260903160528530-maven-wrapper.json` |
-| Sol xhigh | `20260903150315685-init.json`, `20260903150315938-maven-java.json`, `20260903150315987-jacoco-with-min-coverage-check.json`, `20260903150316024-maven-wrapper.json` |
-| Terra xhigh | `20260903183816670-init.json`, `20260903183816812-maven-java.json`, `20260903183853580-maven-wrapper.json` |
-| Luna xhigh | `20260903185157204-init.json`, `20260903185157362-maven-java.json`, `20260903185157401-maven-wrapper.json` |
+| Sol low | [`20260903174822832-init.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/.seed4j/modules/20260903174822832-init.json), [`20260903174822979-maven-java.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/.seed4j/modules/20260903174822979-maven-java.json), [`20260903174823015-maven-wrapper.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/.seed4j/modules/20260903174823015-maven-wrapper.json) |
+| Sol medium | [`20260903172604201-init.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/.seed4j/modules/20260903172604201-init.json), [`20260903172604361-maven-java.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/.seed4j/modules/20260903172604361-maven-java.json), [`20260903172604397-jacoco-with-min-coverage-check.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/.seed4j/modules/20260903172604397-jacoco-with-min-coverage-check.json), [`20260903172604427-maven-wrapper.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/.seed4j/modules/20260903172604427-maven-wrapper.json) |
+| Sol high | [`20260903160528226-init.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/.seed4j/modules/20260903160528226-init.json), [`20260903160528447-maven-java.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/.seed4j/modules/20260903160528447-maven-java.json), [`20260903160528492-jacoco-with-min-coverage-check.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/.seed4j/modules/20260903160528492-jacoco-with-min-coverage-check.json), [`20260903160528530-maven-wrapper.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/.seed4j/modules/20260903160528530-maven-wrapper.json) |
+| Sol xhigh | [`20260903150315685-init.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/.seed4j/modules/20260903150315685-init.json), [`20260903150315938-maven-java.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/.seed4j/modules/20260903150315938-maven-java.json), [`20260903150315987-jacoco-with-min-coverage-check.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/.seed4j/modules/20260903150315987-jacoco-with-min-coverage-check.json), [`20260903150316024-maven-wrapper.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/.seed4j/modules/20260903150316024-maven-wrapper.json) |
+| Terra xhigh | [`20260903183816670-init.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/.seed4j/modules/20260903183816670-init.json), [`20260903183816812-maven-java.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/.seed4j/modules/20260903183816812-maven-java.json), [`20260903183853580-maven-wrapper.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/.seed4j/modules/20260903183853580-maven-wrapper.json) |
+| Luna xhigh | [`20260903185157204-init.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/.seed4j/modules/20260903185157204-init.json), [`20260903185157362-maven-java.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/.seed4j/modules/20260903185157362-maven-java.json), [`20260903185157401-maven-wrapper.json`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/.seed4j/modules/20260903185157401-maven-wrapper.json) |
 
-The Maven-facing files are identical in role across all runs: `pom.xml`, `mvnw`, `mvnw.cmd`, `.mvn/wrapper/maven-wrapper.jar`, and `.mvn/wrapper/maven-wrapper.properties`. The generated POMs use the conventional Maven build lifecycle and Java 25; the three JaCoCo runs enforce zero missed lines and zero missed branches during `verify`.
+The Maven-facing files are identical in role across all runs. The table below links every build artifact to the corresponding pinned result; “wrapper runtime” contains both `maven-wrapper.jar` and `maven-wrapper.properties`. The generated POMs use the conventional Maven build lifecycle and Java 25; the three JaCoCo runs enforce zero missed lines and zero missed branches during `verify`.
+
+| Result | POM | Wrapper scripts | Wrapper runtime |
+| --- | --- | --- | --- |
+| Sol low | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/.mvn/wrapper/maven-wrapper.properties) |
+| Sol medium | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/.mvn/wrapper/maven-wrapper.properties) |
+| Sol high | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/.mvn/wrapper/maven-wrapper.properties) |
+| Sol xhigh | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/.mvn/wrapper/maven-wrapper.properties) |
+| Terra xhigh | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/.mvn/wrapper/maven-wrapper.properties) |
+| Luna xhigh | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/.mvn/wrapper/maven-wrapper.properties) |
 
 ## 3. Final kata artifacts
 
@@ -204,18 +213,18 @@ The Maven-facing files are identical in role across all runs: `pom.xml`, `mvnw`,
 
 | Result | Production source | Test source | Production lines | Test lines | Native tests |
 | --- | --- | --- | ---: | ---: | ---: |
-| Sol low | `src/main/java/com/renanfranca/stringcalculator/StringCalculator.java` | `src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java` | 53 | 117 | 12 |
-| Sol medium | `src/main/java/com/github/renanfranca/stringcalculator/StringCalculator.java` | `src/test/java/com/github/renanfranca/stringcalculator/StringCalculatorTest.java` | 42 | 108 | 11 |
-| Sol high | `src/main/java/com/renanfranca/stringcalculator/StringCalculator.java` | `src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java` | 56 | 108 | 11 |
-| Sol xhigh | `src/main/java/com/renanfranca/stringcalculator/StringCalculator.java` | `src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java` | 58 | 126 | 13 |
-| Terra xhigh | `src/main/java/com/renanfranca/kata/StringCalculator.java` | `src/test/java/com/renanfranca/kata/StringCalculatorTest.java` | 45 | 117 | 12 |
-| Luna xhigh | `src/main/java/com/renanfranca/stringcalculator/StringCalculator.java` | `src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java` | 62 | 117 | 12 |
+| Sol low | [`src/main/java/com/renanfranca/stringcalculator/StringCalculator.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/src/main/java/com/renanfranca/stringcalculator/StringCalculator.java) | [`src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java) | 53 | 117 | 12 |
+| Sol medium | [`src/main/java/com/github/renanfranca/stringcalculator/StringCalculator.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/src/main/java/com/github/renanfranca/stringcalculator/StringCalculator.java) | [`src/test/java/com/github/renanfranca/stringcalculator/StringCalculatorTest.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/src/test/java/com/github/renanfranca/stringcalculator/StringCalculatorTest.java) | 42 | 108 | 11 |
+| Sol high | [`src/main/java/com/renanfranca/stringcalculator/StringCalculator.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/src/main/java/com/renanfranca/stringcalculator/StringCalculator.java) | [`src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java) | 56 | 108 | 11 |
+| Sol xhigh | [`src/main/java/com/renanfranca/stringcalculator/StringCalculator.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/src/main/java/com/renanfranca/stringcalculator/StringCalculator.java) | [`src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java) | 58 | 126 | 13 |
+| Terra xhigh | [`src/main/java/com/renanfranca/kata/StringCalculator.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/src/main/java/com/renanfranca/kata/StringCalculator.java) | [`src/test/java/com/renanfranca/kata/StringCalculatorTest.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/src/test/java/com/renanfranca/kata/StringCalculatorTest.java) | 45 | 117 | 12 |
+| Luna xhigh | [`src/main/java/com/renanfranca/stringcalculator/StringCalculator.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/src/main/java/com/renanfranca/stringcalculator/StringCalculator.java) | [`src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/src/test/java/com/renanfranca/stringcalculator/StringCalculatorTest.java) | 62 | 117 | 12 |
 
 These counts are descriptive only. Neither test count nor production LOC receives points.
 
 ### Behavior delivered
 
-All six expose the same minimal state-free API: a public `StringCalculator` class with instance method `public int add(String numbers)`. All implement the nine `SPEC.md` steps:
+All six expose the same minimal state-free API: a public `StringCalculator` class with instance method `public int add(String numbers)`. All implement the nine [`SPEC.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/38ebbcbfab95f5725b1c22b1d4701fb6222cab6b/SPEC.md) steps:
 
 1. Empty, one-number, and two-number inputs.
 2. An arbitrary number count.
@@ -372,12 +381,12 @@ The intervals below are derived from the first Seed4J module commit to the imple
 
 | Result | First module commit | Implementation commit | Approximate interval |
 | --- | --- | --- | ---: |
-| Sol low | 14:48:22 | 14:55:15 | 6m 53s |
-| Sol medium | 14:26:04 | 14:33:00 | 6m 56s |
-| Sol high | 13:05:28 | 13:30:49 | 25m 21s |
-| Sol xhigh | 12:03:15 | 12:53:44 | 50m 29s |
-| Terra xhigh | 15:38:16 | 15:45:02 | 6m 46s |
-| Luna xhigh | 15:51:57 | 16:01:38 | 9m 41s |
+| Sol low | [`e3ac20f` · 14:48:22](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/e3ac20fa0d3516ba8eda9f73622462729c641e92) | [`f86d943` · 14:55:15](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/f86d943dcb4b5b08677502c4891c17233c7fc034) | 6m 53s |
+| Sol medium | [`d15774d` · 14:26:04](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/d15774df4329c64ba97009e294a0c37d7e0df249) | [`a682b5a` · 14:33:00](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/a682b5a2e9a7d02391a18d3c01555f732fb5d5f0) | 6m 56s |
+| Sol high | [`1205a19` · 13:05:28](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/1205a19b49527e09959e7d0ec33f046ce8bdf01e) | [`efff912` · 13:30:49](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/efff912c45831e4801e6d73083a675afe74367f8) | 25m 21s |
+| Sol xhigh | [`bc2937f` · 12:03:15](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/bc2937fbd28b1af9e8d225e3d1aa04e139ce7d88) | [`e22bea4` · 12:53:44](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/e22bea4e216db808ae7682a63d857f2cce3d8c0b) | 50m 29s |
+| Terra xhigh | [`65352d6` · 15:38:16](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/65352d678971082c114dbd1b0f10db4bfd1d33d5) | [`ff9727c` · 15:45:02](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/ff9727c027f2981be3ba014628ae512eb209c7b7) | 6m 46s |
+| Luna xhigh | [`5fb3d7f` · 15:51:57](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/5fb3d7f3709a414058c1a1d274084f40a57a95bc) | [`31a1cb0` · 16:01:38](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/31a1cb02f7ca6bb9bd251b7702c8c20cad04e8c8) | 9m 41s |
 
 No timing points are awarded. Sequential execution, cache state, and commit timing boundaries prevent a fair speed ranking.
 
@@ -385,12 +394,12 @@ No timing points are awarded. Sequential execution, cache state, and commit timi
 
 | Result | Artifact | Lines | Bytes |
 | --- | --- | ---: | ---: |
-| Sol low | `CONVERSATION_TRANSCRIPT.md` | 4,178 | 316,633 |
-| Sol medium | `CONVERSATION_TRANSCRIPT.md` | 4,868 | 358,365 |
-| Sol high | `CONVERSATION_TRANSCRIPT.md` | 4,966 | 316,132 |
-| Sol xhigh | `AUDITORIA-CONVERSA.md` | 2,540 | 357,729 |
-| Terra xhigh | `CONVERSATION_TRANSCRIPT.md` | 2,774 | 102,932 |
-| Luna xhigh | `CONVERSATION_TRANSCRIPT.md` | 816 | 394,139 |
+| Sol low | [`CONVERSATION_TRANSCRIPT.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e/CONVERSATION_TRANSCRIPT.md) | 4,178 | 316,633 |
+| Sol medium | [`CONVERSATION_TRANSCRIPT.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/bda5482344c1c12531f16d74de6aeb4c50ce732e/CONVERSATION_TRANSCRIPT.md) | 4,868 | 358,365 |
+| Sol high | [`CONVERSATION_TRANSCRIPT.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/dfea557a4cca180ae016654ebafb6664dbf4a098/CONVERSATION_TRANSCRIPT.md) | 4,966 | 316,132 |
+| Sol xhigh | [`AUDITORIA-CONVERSA.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/3d179c56b288f0fcbc0c62ee94b5af3152887136/AUDITORIA-CONVERSA.md) | 2,540 | 357,729 |
+| Terra xhigh | [`CONVERSATION_TRANSCRIPT.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/CONVERSATION_TRANSCRIPT.md) | 2,774 | 102,932 |
+| Luna xhigh | [`CONVERSATION_TRANSCRIPT.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/CONVERSATION_TRANSCRIPT.md) | 816 | 394,139 |
 
 Line and byte counts illustrate format differences rather than completeness. The files record visible messages and tool activity while excluding private reasoning, internal instructions, encrypted content, and secrets. Because a transcript cannot fully contain its own creation and final commit without infinite self-reference, the final recording/commit operation may be absent or summarized. Transcript size and presentation receive no score.
 

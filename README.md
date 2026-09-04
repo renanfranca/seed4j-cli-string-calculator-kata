@@ -51,16 +51,16 @@ A newer CLI, Seed4J runtime, or bundled skill defines a new experiment and shoul
 
 ## Controlled experiment
 
-All implementations started from commit `38ebbcb`, used the same `SPEC.md`, Seed4J CLI v0.0.4 with runtime Seed4J 2.2.0, the same host, and sequential execution. The only intended variables were the Codex model and reasoning effort.
+All implementations started from commit [`38ebbcb`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/38ebbcbfab95f5725b1c22b1d4701fb6222cab6b), used the same [`SPEC.md`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/38ebbcbfab95f5725b1c22b1d4701fb6222cab6b/SPEC.md), Seed4J CLI v0.0.4 with runtime Seed4J 2.2.0, the same host, and sequential execution. The only intended variables were the Codex model and reasoning effort.
 
 | Branch | Pinned result | Model | Effort |
 | --- | --- | --- | --- |
-| `string-calculator-sol-low` | `34ce51f` | `gpt-5.6-sol` | low |
-| `string-calculator-sol-medium` | `bda5482` | `gpt-5.6-sol` | medium |
-| `string-calculator-sol-high` | `dfea557` | `gpt-5.6-sol` | high |
-| `string-calculator-sol-xhigh` | `3d179c5` | `gpt-5.6-sol` | xhigh |
-| `string-calculator-terra-xhigh` | `9001fe8` | `gpt-5.6-terra` | xhigh |
-| `string-calculator-luna-xhigh` | `7ad4d48` | `gpt-5.6-luna` | xhigh |
+| [`string-calculator-sol-low`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-low) | [`34ce51f`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/34ce51f99cd924c890ce6c24d3bdd90d6f710f6e) | `gpt-5.6-sol` | low |
+| [`string-calculator-sol-medium`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-medium) | [`bda5482`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/bda5482344c1c12531f16d74de6aeb4c50ce732e) | `gpt-5.6-sol` | medium |
+| [`string-calculator-sol-high`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-high) | [`dfea557`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/dfea557a4cca180ae016654ebafb6664dbf4a098) | `gpt-5.6-sol` | high |
+| [`string-calculator-sol-xhigh`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-sol-xhigh) | [`3d179c5`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/3d179c56b288f0fcbc0c62ee94b5af3152887136) | `gpt-5.6-sol` | xhigh |
+| [`string-calculator-terra-xhigh`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-terra-xhigh) | [`9001fe8`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/9001fe863565408ac3c9622b3b9e7e3edb7786f6) | `gpt-5.6-terra` | xhigh |
+| [`string-calculator-luna-xhigh`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/tree/string-calculator-luna-xhigh) | [`7ad4d48`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/commit/7ad4d48b311ff664c2f8e4b012151513cad15916) | `gpt-5.6-luna` | xhigh |
 
 ## Principal findings
 
