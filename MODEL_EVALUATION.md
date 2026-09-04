@@ -2,9 +2,9 @@
 
 ## Executive conclusion
 
-Seed4J CLI was highly effective across all six runs. Every model discovered the active runtime, selected a minimal Java/Maven foundation, produced traceable module history, retained a project-local Maven Wrapper, and left an implementation that passes both its native build and a common black-box acceptance suite.
+This report is a technical evaluation of how six Codex model/reasoning configurations used Seed4J CLI under one shared kata protocol. Within these six pinned runs, every model discovered the active runtime, selected a Java/Maven foundation, produced traceable module history, retained a project-local Maven Wrapper, and left an implementation that passes both its native build and a common black-box acceptance suite.
 
-The strongest result in this experiment is Sol xhigh at 98/100. Sol low and Sol high tie at 96/100. At xhigh, Sol leads Luna (95) and Terra (91). These scores describe the six pinned artifacts under this protocol; they are not general-purpose model rankings.
+The strongest result in this experiment is Sol xhigh at 98/100. Sol low and Sol high tie at 96/100. At xhigh, Sol leads Luna (95) and Terra (91). These scores describe the six pinned artifacts and how their models used Seed4J under this protocol; they are not general-purpose model rankings or evidence of Seed4J's causal effect.
 
 ## 1. Experimental protocol
 
@@ -207,6 +207,19 @@ The Maven-facing files are identical in role across all runs. The table below li
 | Terra xhigh | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/9001fe863565408ac3c9622b3b9e7e3edb7786f6/.mvn/wrapper/maven-wrapper.properties) |
 | Luna xhigh | [`pom.xml`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/pom.xml) | [`mvnw`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/mvnw), [`mvnw.cmd`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/mvnw.cmd) | [`maven-wrapper.jar`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/.mvn/wrapper/maven-wrapper.jar), [`maven-wrapper.properties`](https://github.com/renanfranca/seed4j-cli-string-calculator-kata/blob/7ad4d48b311ff664c2f8e4b012151513cad15916/.mvn/wrapper/maven-wrapper.properties) |
 
+### Cross-run Seed4J observations
+
+This section summarizes what the six model runs demonstrably did with Seed4J CLI; the preceding commands, pinned module records, and build artifacts remain the evidence for each observation.
+
+- Every model inspected the CLI runtime, module catalog, and help, then generated at least one read-only plan before applying modules.
+- Seed4J resolved dependencies into an effective module order. The clearest example is Sol xhigh: its request listed `maven-wrapper` before `jacoco-with-min-coverage-check`, while the resulting commits placed JaCoCo before the wrapper.
+- Every successful module application produced an `Apply module: ...` commit and a matching `.seed4j/modules` record containing the resolved parameters.
+- All six results retained the Maven Wrapper and conventional Maven source layout, and all six pinned builds passed `./mvnw -q verify`.
+
+The model-driven choices were not uniform. Only Sol medium, Sol high, and Sol xhigh selected `jacoco-with-min-coverage-check`; Sol low, Terra xhigh, and Luna xhigh did not enforce a coverage gate. Terra initially omitted `maven-wrapper` and added it only after global Maven was unavailable, whereas the other runs included it in their initial applied module set. Discovery breadth, package names, and base-name capitalization also varied by task.
+
+These observations apply to Seed4J CLI v0.0.4 with runtime 2.2.0 and the Java 25+, Node.js 22+, and npm prerequisites used here. Because Seed4J was present in every run, they describe capabilities exercised by the evaluated models rather than a causal advantage over another workflow.
+
 ## 3. Final kata artifacts
 
 ### Source and test paths
@@ -370,6 +383,7 @@ Every score starts from 100; this table lists every deduction. Categories or sub
 - Maven dependencies and Seed4J runtime data could be warm for later runs. Cache warming makes elapsed-time comparison especially weak.
 - Commit timestamps measure repository events, not end-to-end model latency. Tool scheduling, retries, transcript generation, and user orchestration are not normalized.
 - Token usage and monetary cost are unavailable, so no cost-effectiveness claim or score is possible.
+- Every task used Seed4J CLI; there was no control group implementing the kata without it. The results therefore do not demonstrate that Seed4J made implementation easier or faster, reduced token usage, improved code quality, or outperformed another scaffolding or manual approach.
 - Transcript formats differ substantially: prose-oriented Markdown, structured Markdown, raw JSONL-like audit output, and different truncation/omission policies. Audit presentation quality is therefore unweighted.
 - The exact prompt and starting artifact were controlled, but generated package/base-name choices were left to each task and became observed outcomes.
 - The black-box suite increases confidence in the shared public contract; it is not a proof over every possible malformed input or delimiter combination.
